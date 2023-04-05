@@ -57,6 +57,7 @@ body {
 
 h1 {
   --h1-color: #ff5e34;
+  color: #ffff;
   background-color: #bebb9f17;
   width: 50%;
   text-align: center;
