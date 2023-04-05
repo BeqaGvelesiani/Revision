@@ -1,0 +1,149 @@
+/* ------ variables -------- */
+:root {
+  --LogoSize1: 12vh;
+}
+
+/* ------ variables -------- */
+
+.logo {
+  background-color: #3c2a2100;
+  width: var(--LogoSize1);
+  height: calc(var(--LogoSize1) * 0.6);
+  border-radius: calc(var(--LogoSize1) * 0.05);
+  /* box-shadow: 1rem 1rem 3rem 0.1rem red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: blink 1000ms infinite;
+}
+
+.logoBackgroundOval {
+  background-color: #f94a29;
+  width: 80%;
+  height: 80%;
+  border-radius: 62% 38% 70% 30% / 55% 56% 44% 45%;
+  animation: shapeChange 15000ms infinite;
+  overflow: hidden;
+}
+
+@keyframes shapeChange {
+  0% {
+    border-radius: 62% 38% 70% 30% / 55% 56% 44% 45%;
+  }
+  25% {
+    border-radius: 51% 49% 55% 45% / 43% 51% 49% 57%;
+  }
+  50% {
+    border-radius: 44% 56% 77% 23% / 49% 43% 57% 51%;
+  }
+  75% {
+    border-radius: 63% 37% 67% 33% / 49% 48% 52% 64%;
+  }
+}
+
+/* @keyframes blink {
+    0% {box-shadow: 0.5rem 0.5rem 2rem 0.1rem red}
+    100% {box-shadow: 0.1rem 0.1rem 0.1rem 0.05rem yellow}
+} */
+
+.logoLetters {
+  position: absolute;
+  width: calc(var(--LogoSize1) * 0.65);
+}
+
+/* #letters2 {
+    animation: rush2 5000ms cubic-bezier(0.39, 0.41, 0.54,-0.48) infinite;
+}
+
+#letters3 {
+    animation: rush1 5000ms cubic-bezier(0.39, 0.41, 0.54,-0.48) infinite;
+} */
+
+/* #letters3 {
+    animation: rush3 5000ms cubic-bezier(0.39, 0.41, 0.54,-0.48) infinite;
+} */
+
+/* #letters2 {
+    opacity: 0.8;
+    transform: translate(calc(var(--LogoSize1) * -0.04), calc(var(--LogoSize1) * 0.04));
+}
+
+#letters3 {
+    opacity: 0.5;
+    transform: translate(calc(var(--size1) * -0.02), calc(var(--size1) * 0.02));
+    color: blue;
+} */
+
+/* #letters1:hover {
+    animation: rush1 1000ms;
+} */
+
+@keyframes rush1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(calc(var(--size1) * 0.06), calc(var(--size1) * -0.06));
+    opacity: 0.2;
+  }
+  20% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes rush2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(calc(var(--size1) * 0.03), calc(var(--size1) * -0.03));
+    opacity: 0.4;
+  }
+  20% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* @keyframes rush3 {
+    0% {
+        transform: translate(0, 0)
+    }
+    25% {
+        transform: translate(calc(var(--size1) * -0.02), calc(var(--size1) * 0.02));
+        opacity: 0.2;
+    }
+    50% {transform: translate(0, 0)}
+    100% {
+        transform: translate(0, 0)
+    }
+} */
+
+g {
+  stroke-linecap: round;
+  font-size: calc(var(--size1) * 0.001);
+}
+
+#letters1 g {
+  stroke: none;
+  stroke-width: 1mm;
+  fill: #252525af;
+}
+
+#letters2 g {
+  stroke: none;
+  stroke-width: calc(var(--size1) * 0.01);
+  stroke: #f94a29;
+  fill: #252525af;
+}

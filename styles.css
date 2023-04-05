@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  background-image: linear-gradient(
+    to right bottom,
+    #bebb9f,
+    #93937d,
+    #6b6d5c,
+    #46493e,
+    #252721
+  );
+  height: fit-content;
+}
+
+#con-page {
+  height: 100vh;
+}
+
+.section-2,
+.section-3,
+.section-4 {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.container-fluid {
+  font-family: "Noto Serif Georgian", serif;
+  color: #25252506;
+  font-weight: 600;
+}
+
+.container-fluid a {
+  --anchor-color: #183a1d;
+  --anchor-hover-color: #ff5e34;
+  color: var(--anchor-color);
+  transition: 500ms;
+}
+
+.container-fluid a:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(228, 159, 20, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(244, 178, 9, 0.09) 0px -3px 5px,
+    rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color: var(--anchor-hover-color);
+  border-radius: 12px;
+}
+
+.accordion-button {
+  background-color: #ff5e34;
+}
+
+.container-fluid .navbar-text {
+  font-weight: 900;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+h1 {
+  --h1-color: #ff5e34;
+  background-color: #bebb9f17;
+  width: 50%;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  padding: 8px;
+  margin: 1rem auto;
+  background-color: none;
+  box-shadow: rgba(173, 18, 13, 0.225) 0px 30px 60px -12px inset,
+    rgba(30, 28, 28, 0.7) 0px 18px 36px -18px inset;
+}
+
+.dayly-div p {
+  color: #252525;
+  font-weight: 500;
+}
+
+.section-2 .dayly-div {
+  padding: 8px;
+  height: 10rem;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+
+.section-4 .weekly-div {
+  padding: 8px;
+  height: 10rem;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+
+.weekly-div p {
+  color: #252525;
+  font-weight: 500;
+}
+
+.line {
+  border-bottom: var(--h1-color) solid 1px;
+}
+
+.conditions-div {
+  padding: 12px 0;
+  height: fit-content;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  margin-bottom: 10rem;
+}
+
+.p-div {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #ff5e34;
+  border: 1px solid black;
+  display: flex;
+  box-shadow: 0 0 20px 5px #183a1d5f;
+  box-sizing: border-box;
+}
+
+.conditions-div p {
+  font-size: 20px;
+  color: #252525;
+  font-weight: 700;
+  width: 80%;
+  padding: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.conditions-div ul {
+  display: flex;
+  place-items: center;
+  padding: auto;
+}
